@@ -1,0 +1,10 @@
+Différences entre données INPN (inpn) et données en base (limites)
+
+select st_area(pn.geom), st_area(limites.geom), st_difference(pn.geom, limites.geom), * from inpn.pn, limites.limites 
+where pn.id=8 and limites.nom = 'coeur'
+
+Un polygone de forme triangulaire à Roya (Tinée) est oublié ? dans la table limites.limites
+
+La table limites.communes a été mise à jour à partir de admin_express.commune.
+La table limites.area a été mise à jour à partir de limites.communes.
+Les fragments de grid1k_area pour les communes ont été recalculés.
