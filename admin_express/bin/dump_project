@@ -1,0 +1,3 @@
+#!/bin/sh
+ROOTDIR=$(dirname $0)/..
+psql -c "select encode(content, 'hex') from admin_express.qgis_projects where name = 'Code officiel géographique';" -q -t service=projets|xxd -r -p |zcat > $ROOTDIR/QGIS/"Code officiel géographique.qgs"
