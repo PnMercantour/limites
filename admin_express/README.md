@@ -45,4 +45,4 @@ On garde la structure des tables IGN pour simplifier l'import ultérieur de mise
 
 ## Mise à jour du projet
 
-Les scripts [bin/dump_schema]() et [bin/dump_project]() lisent depuis la base de données la version courante du schema sql et du projet QGIS et les enregistrent dans ce projet git: [sql/schema.sql]() et [QGIS/Code officiel géographique.qgs]().
+Les scripts [bin/dump_schema](bin/dump_schema) et [bin/dump_project](bin/dump_project) lisent depuis la base de données la version courante du schema sql et du projet QGIS et les enregistrent dans ce projet git: [sql/schema.sql](sql/schema.sql) et [QGIS/Code officiel géographique.qgs](QGIS/Code officiel géographique.qgs).
