@@ -1,3 +1,14 @@
+# Données administratives de territoire, le schema limites
+
+Ce projet donne accès aux données géographiques réglementaires spécifiques au Parc national du Mercantour (par exemple les limites réglementaires du PNM, la liste des communes de l'aire optimale d'adhésion) ainsi qu'aux données administratives et réglementaires régionales (par exemple la liste de l'ensemble des communes de la région Sud PACA ou la liste des espaces protégés) enregistrées dans la base de données du PNM.
+
+Les données spécifiques sont structurées pour faciliter et accélérer les traitements en base de données (par exemple : observations naturalistes sur le territoire d'une commune du Parc). En particulier, toutes les données géographiques spécifiques sont redécoupées suivant le pavage des mailles 1km réglementaires en projection légale et leur utilisation optimale s'appuie sur les principes exposés ci dessous.
+
+L'utilisation des données régionales est décrite dans les dossiers suivants:
+
+- [admin_express](admin_express): Service admin express COG (code officiel géographique) de l'INSEE et l'IGN.
+- [INPN](INPN): Espaces protégés de la région Sud PACA.
+
 ## limites.area
 
 Table de référence des objets géographiques remarquables du PNM (zones réglementaires, communes, ...)
