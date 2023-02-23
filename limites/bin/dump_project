@@ -1,0 +1,4 @@
+#!/bin/sh
+SCHEMA="limites"
+ROOTDIR=$(dirname $0)/..
+psql -c "select encode(content, 'hex') from $SCHEMA.qgis_projects where name = '$SCHEMA';" -q -t service=projets|xxd -r -p |zcat > "$ROOTDIR/QGIS/$SCHEMA.qgs"

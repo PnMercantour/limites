@@ -4,8 +4,10 @@ Les données relatives aux espaces protégés de la région Sud PACA sont enregi
 
 ## Origine des données
 
-Les données proviennent du Service du Patrimoine Naturel du Muséum national d'Histoire naturelle (MNHN-SPN).  
+Les données proviennent du Service du Patrimoine Naturel du Muséum national d'Histoire naturelle (MNHN-SPN).
+
 [Description des couches SIG nationales de référence des espaces naturels](https://inpn.mnhn.fr/docs/transfertSIG.pdf)
+
 Les données sont régulièrement mises à jour (mise à jour la plus récente: février 2023)
 
 ## Utilisation SQL et QGIS

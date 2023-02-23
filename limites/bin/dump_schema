@@ -1,0 +1,4 @@
+#!/bin/sh
+SCHEMA=limites
+ROOTDIR=$(dirname "$0")/..
+pg_dump -d "service=projets" -s --schema="$SCHEMA" >$ROOTDIR/sql/schema.sql
