@@ -9,7 +9,7 @@ ADMIN-EXPRESS-COG-CARTO_3-1\_\_SHP_LAMB93_FXX_2022-04-15
 
 ## Utilisation
 
-Le projet QGIS `Code officiel géographique` (schema `admin_express`) permet de parcourir les données administratives régionales (des relations sont établies entre les différentes couches pour faciliter la navigation à partir des outils QGIS d'identification des entités).
+Le projet QGIS `admin_express` (schema `admin_express`) permet de parcourir les données administratives régionales (des relations sont établies entre les différentes couches pour faciliter la navigation à partir des outils QGIS d'identification des entités).
 
 Toutes les tables du schema `admin_express` sont en accès libre en lecture.
 
@@ -47,5 +47,5 @@ On garde la structure des tables IGN pour simplifier l'import ultérieur de mise
 
 Il est vivement recommandé de mettre à jour le projet git lorsque le schema ou le projet QGIS sont modifiés en base.
 
-Le script [bin/dump_schema](bin/dump_schema) lit depuis la base de données la version courante du schema sql et l'enregistre dans [sql/schema.sql](sql/schema.sql).  
-Le script [bin/dump_project](bin/dump_project) télécharge la version courante du projet QGIS depuis la base de données et l'enregistre dans [QGIS/Code officiel géographique.qgs](<QGIS/Code officiel géographique.qgs>).
+Le script [bin/dump_schema](bin/dump_schema) lit depuis la base de données la version courante du schema sql et l'enregistre dans [schema.sql](sql/schema.sql).  
+Le script [bin/dump_project](bin/dump_project) télécharge la version courante du projet QGIS depuis la base de données et l'enregistre dans [admin_express.qgs](QGIS/admin_express.qgs).

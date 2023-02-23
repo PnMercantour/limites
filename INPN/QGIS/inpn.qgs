@@ -1,0 +1,2699 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.22.16-Białowieża" projectname="" saveUserFull="Vincent Prunet" saveUser="vprunet" saveDateTime="2023-02-23T10:44:16">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+      <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+      <srsid>145</srsid>
+      <srid>2154</srid>
+      <authid>EPSG:2154</authid>
+      <description>RGF93 / Lambert-93</description>
+      <projectionacronym>lcc</projectionacronym>
+      <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer legend_split_behavior="0" source="service='projets' sslmode=verify-ca key='id' estimatedmetadata=true srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='0' table=&quot;inpn&quot;.&quot;rnr&quot; (geom)" expanded="1" checked="Qt::Checked" providerKey="postgres" id="rnr_8dec0a2e_bc77_4ca1_8163_3494565728b0" patch_size="-1,-1" name="Réserve naturelle régionale (RNR)" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer legend_split_behavior="0" source="service='projets' sslmode=verify-ca key='id' estimatedmetadata=true srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='0' table=&quot;inpn&quot;.&quot;pnr&quot; (geom)" expanded="1" checked="Qt::Checked" providerKey="postgres" id="pnr_8a40f0f5_f235_471d_9253_4604a72ea311" patch_size="-1,-1" name="Parc naturel régional (PNR)" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer legend_split_behavior="0" source="service='projets' sslmode=verify-ca key='id' estimatedmetadata=true srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='0' table=&quot;inpn&quot;.&quot;pn&quot; (geom)" expanded="1" checked="Qt::Checked" providerKey="postgres" id="pn_436acf2c_f155_40b9_b854_8c8b0be6f11f" patch_size="-1,-1" name="Parc national (PN)" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>pn_436acf2c_f155_40b9_b854_8c8b0be6f11f</item>
+      <item>pnr_8a40f0f5_f235_471d_9253_4604a72ea311</item>
+      <item>rnr_8dec0a2e_bc77_4ca1_8163_3494565728b0</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings unit="1" maxScale="0" type="1" self-snapping="0" enabled="0" scaleDependencyMode="0" mode="2" tolerance="12" intersection-snapping="0" minScale="0">
+    <individual-layer-settings>
+      <layer-setting units="1" maxScale="0" type="1" id="pn_436acf2c_f155_40b9_b854_8c8b0be6f11f" enabled="0" tolerance="12" minScale="0"/>
+      <layer-setting units="1" maxScale="0" type="1" id="pnr_8a40f0f5_f235_471d_9253_4604a72ea311" enabled="0" tolerance="12" minScale="0"/>
+      <layer-setting units="1" maxScale="0" type="1" id="rnr_8dec0a2e_bc77_4ca1_8163_3494565728b0" enabled="0" tolerance="12" minScale="0"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <polymorphicRelations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>953778.46386046870611608</xmin>
+      <ymin>6276566.49337477050721645</ymin>
+      <xmax>1087882.9080261467024684</xmax>
+      <ymax>6395799.40829136967658997</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+        <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>145</srsid>
+        <srid>2154</srid>
+        <authid>EPSG:2154</authid>
+        <description>RGF93 / Lambert-93</description>
+        <projectionacronym>lcc</projectionacronym>
+        <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="Réserve naturelle régionale (RNR)">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" isInOverview="0" layerid="rnr_8dec0a2e_bc77_4ca1_8163_3494565728b0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="Parc naturel régional (PNR)">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" isInOverview="0" layerid="pnr_8a40f0f5_f235_471d_9253_4604a72ea311"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="Parc national (PN)">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" isInOverview="0" layerid="pn_436acf2c_f155_40b9_b854_8c8b0be6f11f"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <main-annotation-layer legendPlaceholderImage="" refreshOnNotifyEnabled="0" type="annotation" autoRefreshTime="0" autoRefreshEnabled="0" refreshOnNotifyMessage="">
+    <id>Annotations_c04a9050_5b6f_43ec_b9b7_15d26cf04f80</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername>Annotations</layername>
+    <srs>
+      <spatialrefsys>
+        <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+        <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>145</srsid>
+        <srid>2154</srid>
+        <authid>EPSG:2154</authid>
+        <description>RGF93 / Lambert-93</description>
+        <projectionacronym>lcc</projectionacronym>
+        <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links/>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent/>
+    </resourceMetadata>
+    <items/>
+    <layerOpacity>1</layerOpacity>
+    <blendMode>0</blendMode>
+    <paintEffect/>
+  </main-annotation-layer>
+  <projectlayers>
+    <maplayer autoRefreshTime="0" type="vector" wkbType="MultiPolygon" minScale="100000000" legendPlaceholderImage="" simplifyLocal="1" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" symbologyReferenceScale="-1" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" readOnly="0" simplifyDrawingHints="1" styleCategories="AllStyleCategories" autoRefreshEnabled="0" geometry="Polygon" labelsEnabled="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>397821.05400937201920897</xmin>
+        <ymin>6178645.44799999985843897</ymin>
+        <xmax>1074396.69999985001049936</xmax>
+        <ymax>6780192.15239827986806631</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>-1.05754660070060136</xmin>
+        <ymin>42.61020108606494006</ymin>
+        <xmax>8.02489531389912081</xmax>
+        <ymax>48.12207728682297869</ymax>
+      </wgs84extent>
+      <id>pn_436acf2c_f155_40b9_b854_8c8b0be6f11f</id>
+      <datasource>service='projets' sslmode=verify-ca key='id' estimatedmetadata=true srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='0' table="inpn"."pn" (geom)</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Parc national (PN)</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+          <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract>Parcs nationaux de métropole, INPN 2023-02</abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+            <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>145</srsid>
+            <srid>2154</srid>
+            <authid>EPSG:2154</authid>
+            <description>RGF93 / Lambert-93</description>
+            <projectionacronym>lcc</projectionacronym>
+            <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" crs="EPSG:2154" maxz="0" miny="0" minx="0" dimensions="2" minz="0" maxx="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal fixedDuration="0" accumulate="0" limitMode="0" durationField="" enabled="0" endExpression="" endField="" startField="" startExpression="" mode="0" durationUnit="min">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 attr="code_r_enp" type="categorizedSymbol" enableorderby="0" symbollevels="0" forceraster="0" referencescale="-1">
+        <categories>
+          <category value="AAPN" symbol="0" render="true" label="Aire d'adhésion (AAPN)"/>
+          <category value="CPN" symbol="1" render="true" label="Coeur (CPN)"/>
+        </categories>
+        <symbols>
+          <symbol force_rhr="0" type="fill" alpha="1" clip_to_extent="1" name="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="255,127,0,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,127,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol force_rhr="0" type="fill" alpha="1" clip_to_extent="1" name="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="51,160,44,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="51,160,44,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol force_rhr="0" type="fill" alpha="1" clip_to_extent="1" name="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="114,155,111,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="114,155,111,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp type="randomcolors" name="[source]">
+          <Option/>
+        </colorramp>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option type="Map">
+          <Option value="0" type="int" name="embeddedWidgets/count"/>
+          <Option name="variableNames"/>
+          <Option name="variableValues"/>
+        </Option>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory showAxis="1" backgroundAlpha="255" width="15" spacingUnit="MM" enabled="0" maxScaleDenominator="1e+08" barWidth="5" labelPlacementMethod="XHeight" rotationOffset="270" height="15" scaleDependency="Area" opacity="1" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" penColor="#000000" penWidth="0" lineSizeType="MM" minScaleDenominator="0" sizeType="MM" direction="0" spacingUnitScale="3x:0,0,0,0,0,0" diagramOrientation="Up" penAlpha="255" backgroundColor="#ffffff" spacing="5" scaleBasedVisibility="0" lineSizeScale="3x:0,0,0,0,0,0">
+          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+          <axisSymbol>
+            <symbol force_rhr="0" type="line" alpha="1" clip_to_extent="1" name="">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+              <layer class="SimpleLine" locked="0" pass="0" enabled="1">
+                <Option type="Map">
+                  <Option value="0" type="QString" name="align_dash_pattern"/>
+                  <Option value="square" type="QString" name="capstyle"/>
+                  <Option value="5;2" type="QString" name="customdash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="customdash_unit"/>
+                  <Option value="0" type="QString" name="dash_pattern_offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
+                  <Option value="0" type="QString" name="draw_inside_polygon"/>
+                  <Option value="bevel" type="QString" name="joinstyle"/>
+                  <Option value="35,35,35,255" type="QString" name="line_color"/>
+                  <Option value="solid" type="QString" name="line_style"/>
+                  <Option value="0.26" type="QString" name="line_width"/>
+                  <Option value="MM" type="QString" name="line_width_unit"/>
+                  <Option value="0" type="QString" name="offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="offset_unit"/>
+                  <Option value="0" type="QString" name="ring_filter"/>
+                  <Option value="0" type="QString" name="trim_distance_end"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_end_unit"/>
+                  <Option value="0" type="QString" name="trim_distance_start"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_start_unit"/>
+                  <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
+                  <Option value="0" type="QString" name="use_custom_dash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
+                </Option>
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="trim_distance_end" v="0"/>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_end_unit" v="MM"/>
+                <prop k="trim_distance_start" v="0"/>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_start_unit" v="MM"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" type="QString" name="name"/>
+                    <Option name="properties"/>
+                    <Option value="collection" type="QString" name="type"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" dist="0" placement="1" priority="0" zIndex="0" showAll="1" linePlacementFlags="18">
+        <properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration type="Map">
+          <Option type="Map" name="QgsGeometryGapCheck">
+            <Option value="0" type="double" name="allowedGapsBuffer"/>
+            <Option value="false" type="bool" name="allowedGapsEnabled"/>
+            <Option value="" type="QString" name="allowedGapsLayer"/>
+          </Option>
+        </checkConfiguration>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_local">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="ppn_asso">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="code_r_enp">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nom_site">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="date_crea">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="modif_adm">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="modif_geo">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="url_fiche">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="surf_off">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="acte_deb">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="acte_fin">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="gest_site">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="operateur">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="precision">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="src_geom">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="src_annee">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="marin">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p1_nature">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p2_culture">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p3_paysage">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p4_geologi">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p5_speleo">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p6_archeo">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p7_paleob">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p8_anthrop">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p9_science">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p10_public">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p11_dd">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p12_autre">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_mnhn">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+        <alias field="id_local" index="1" name=""/>
+        <alias field="ppn_asso" index="2" name=""/>
+        <alias field="code_r_enp" index="3" name=""/>
+        <alias field="nom_site" index="4" name=""/>
+        <alias field="date_crea" index="5" name=""/>
+        <alias field="modif_adm" index="6" name=""/>
+        <alias field="modif_geo" index="7" name=""/>
+        <alias field="url_fiche" index="8" name=""/>
+        <alias field="surf_off" index="9" name=""/>
+        <alias field="acte_deb" index="10" name=""/>
+        <alias field="acte_fin" index="11" name=""/>
+        <alias field="gest_site" index="12" name=""/>
+        <alias field="operateur" index="13" name=""/>
+        <alias field="precision" index="14" name=""/>
+        <alias field="src_geom" index="15" name=""/>
+        <alias field="src_annee" index="16" name=""/>
+        <alias field="marin" index="17" name=""/>
+        <alias field="p1_nature" index="18" name=""/>
+        <alias field="p2_culture" index="19" name=""/>
+        <alias field="p3_paysage" index="20" name=""/>
+        <alias field="p4_geologi" index="21" name=""/>
+        <alias field="p5_speleo" index="22" name=""/>
+        <alias field="p6_archeo" index="23" name=""/>
+        <alias field="p7_paleob" index="24" name=""/>
+        <alias field="p8_anthrop" index="25" name=""/>
+        <alias field="p9_science" index="26" name=""/>
+        <alias field="p10_public" index="27" name=""/>
+        <alias field="p11_dd" index="28" name=""/>
+        <alias field="p12_autre" index="29" name=""/>
+        <alias field="id_mnhn" index="30" name=""/>
+      </aliases>
+      <defaults>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="id_local" expression="" applyOnUpdate="0"/>
+        <default field="ppn_asso" expression="" applyOnUpdate="0"/>
+        <default field="code_r_enp" expression="" applyOnUpdate="0"/>
+        <default field="nom_site" expression="" applyOnUpdate="0"/>
+        <default field="date_crea" expression="" applyOnUpdate="0"/>
+        <default field="modif_adm" expression="" applyOnUpdate="0"/>
+        <default field="modif_geo" expression="" applyOnUpdate="0"/>
+        <default field="url_fiche" expression="" applyOnUpdate="0"/>
+        <default field="surf_off" expression="" applyOnUpdate="0"/>
+        <default field="acte_deb" expression="" applyOnUpdate="0"/>
+        <default field="acte_fin" expression="" applyOnUpdate="0"/>
+        <default field="gest_site" expression="" applyOnUpdate="0"/>
+        <default field="operateur" expression="" applyOnUpdate="0"/>
+        <default field="precision" expression="" applyOnUpdate="0"/>
+        <default field="src_geom" expression="" applyOnUpdate="0"/>
+        <default field="src_annee" expression="" applyOnUpdate="0"/>
+        <default field="marin" expression="" applyOnUpdate="0"/>
+        <default field="p1_nature" expression="" applyOnUpdate="0"/>
+        <default field="p2_culture" expression="" applyOnUpdate="0"/>
+        <default field="p3_paysage" expression="" applyOnUpdate="0"/>
+        <default field="p4_geologi" expression="" applyOnUpdate="0"/>
+        <default field="p5_speleo" expression="" applyOnUpdate="0"/>
+        <default field="p6_archeo" expression="" applyOnUpdate="0"/>
+        <default field="p7_paleob" expression="" applyOnUpdate="0"/>
+        <default field="p8_anthrop" expression="" applyOnUpdate="0"/>
+        <default field="p9_science" expression="" applyOnUpdate="0"/>
+        <default field="p10_public" expression="" applyOnUpdate="0"/>
+        <default field="p11_dd" expression="" applyOnUpdate="0"/>
+        <default field="p12_autre" expression="" applyOnUpdate="0"/>
+        <default field="id_mnhn" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" field="id" unique_strength="1" exp_strength="0" constraints="3"/>
+        <constraint notnull_strength="0" field="id_local" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="ppn_asso" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="code_r_enp" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="nom_site" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="date_crea" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="modif_adm" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="modif_geo" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="url_fiche" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="surf_off" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="acte_deb" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="acte_fin" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="gest_site" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="operateur" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="precision" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="src_geom" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="src_annee" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="marin" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p1_nature" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p2_culture" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p3_paysage" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p4_geologi" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p5_speleo" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p6_archeo" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p7_paleob" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p8_anthrop" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p9_science" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p10_public" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p11_dd" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p12_autre" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="id_mnhn" unique_strength="0" exp_strength="0" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="id_local" exp="" desc=""/>
+        <constraint field="ppn_asso" exp="" desc=""/>
+        <constraint field="code_r_enp" exp="" desc=""/>
+        <constraint field="nom_site" exp="" desc=""/>
+        <constraint field="date_crea" exp="" desc=""/>
+        <constraint field="modif_adm" exp="" desc=""/>
+        <constraint field="modif_geo" exp="" desc=""/>
+        <constraint field="url_fiche" exp="" desc=""/>
+        <constraint field="surf_off" exp="" desc=""/>
+        <constraint field="acte_deb" exp="" desc=""/>
+        <constraint field="acte_fin" exp="" desc=""/>
+        <constraint field="gest_site" exp="" desc=""/>
+        <constraint field="operateur" exp="" desc=""/>
+        <constraint field="precision" exp="" desc=""/>
+        <constraint field="src_geom" exp="" desc=""/>
+        <constraint field="src_annee" exp="" desc=""/>
+        <constraint field="marin" exp="" desc=""/>
+        <constraint field="p1_nature" exp="" desc=""/>
+        <constraint field="p2_culture" exp="" desc=""/>
+        <constraint field="p3_paysage" exp="" desc=""/>
+        <constraint field="p4_geologi" exp="" desc=""/>
+        <constraint field="p5_speleo" exp="" desc=""/>
+        <constraint field="p6_archeo" exp="" desc=""/>
+        <constraint field="p7_paleob" exp="" desc=""/>
+        <constraint field="p8_anthrop" exp="" desc=""/>
+        <constraint field="p9_science" exp="" desc=""/>
+        <constraint field="p10_public" exp="" desc=""/>
+        <constraint field="p11_dd" exp="" desc=""/>
+        <constraint field="p12_autre" exp="" desc=""/>
+        <constraint field="id_mnhn" exp="" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column hidden="0" type="field" name="id" width="-1"/>
+          <column hidden="0" type="field" name="id_local" width="-1"/>
+          <column hidden="0" type="field" name="ppn_asso" width="-1"/>
+          <column hidden="0" type="field" name="code_r_enp" width="-1"/>
+          <column hidden="0" type="field" name="nom_site" width="-1"/>
+          <column hidden="0" type="field" name="date_crea" width="-1"/>
+          <column hidden="0" type="field" name="modif_adm" width="-1"/>
+          <column hidden="0" type="field" name="modif_geo" width="-1"/>
+          <column hidden="0" type="field" name="url_fiche" width="-1"/>
+          <column hidden="0" type="field" name="surf_off" width="-1"/>
+          <column hidden="0" type="field" name="acte_deb" width="-1"/>
+          <column hidden="0" type="field" name="acte_fin" width="-1"/>
+          <column hidden="0" type="field" name="gest_site" width="-1"/>
+          <column hidden="0" type="field" name="operateur" width="-1"/>
+          <column hidden="0" type="field" name="precision" width="-1"/>
+          <column hidden="0" type="field" name="src_geom" width="-1"/>
+          <column hidden="0" type="field" name="src_annee" width="-1"/>
+          <column hidden="0" type="field" name="marin" width="-1"/>
+          <column hidden="0" type="field" name="p1_nature" width="-1"/>
+          <column hidden="0" type="field" name="p2_culture" width="-1"/>
+          <column hidden="0" type="field" name="p3_paysage" width="-1"/>
+          <column hidden="0" type="field" name="p4_geologi" width="-1"/>
+          <column hidden="0" type="field" name="p5_speleo" width="-1"/>
+          <column hidden="0" type="field" name="p6_archeo" width="-1"/>
+          <column hidden="0" type="field" name="p7_paleob" width="-1"/>
+          <column hidden="0" type="field" name="p8_anthrop" width="-1"/>
+          <column hidden="0" type="field" name="p9_science" width="-1"/>
+          <column hidden="0" type="field" name="p10_public" width="-1"/>
+          <column hidden="0" type="field" name="p11_dd" width="-1"/>
+          <column hidden="0" type="field" name="p12_autre" width="-1"/>
+          <column hidden="0" type="field" name="id_mnhn" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui est appelée lorsque le formulaire est
+ouvert.
+
+Utilisez cette fonction pour ajouter une logique supplémentaire à vos formulaires.
+
+Entrez le nom de la fonction dans le champ 
+"Fonction d'initialisation Python".
+Voici un exemple:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="acte_deb"/>
+        <field editable="1" name="acte_fin"/>
+        <field editable="1" name="code_r_enp"/>
+        <field editable="1" name="date_crea"/>
+        <field editable="1" name="gest_site"/>
+        <field editable="1" name="id"/>
+        <field editable="1" name="id_local"/>
+        <field editable="1" name="id_mnhn"/>
+        <field editable="1" name="marin"/>
+        <field editable="1" name="modif_adm"/>
+        <field editable="1" name="modif_geo"/>
+        <field editable="1" name="nom_site"/>
+        <field editable="1" name="operateur"/>
+        <field editable="1" name="p10_public"/>
+        <field editable="1" name="p11_dd"/>
+        <field editable="1" name="p12_autre"/>
+        <field editable="1" name="p1_nature"/>
+        <field editable="1" name="p2_culture"/>
+        <field editable="1" name="p3_paysage"/>
+        <field editable="1" name="p4_geologi"/>
+        <field editable="1" name="p5_speleo"/>
+        <field editable="1" name="p6_archeo"/>
+        <field editable="1" name="p7_paleob"/>
+        <field editable="1" name="p8_anthrop"/>
+        <field editable="1" name="p9_science"/>
+        <field editable="1" name="ppn_asso"/>
+        <field editable="1" name="precision"/>
+        <field editable="1" name="src_annee"/>
+        <field editable="1" name="src_geom"/>
+        <field editable="1" name="surf_off"/>
+        <field editable="1" name="url_fiche"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="acte_deb"/>
+        <field labelOnTop="0" name="acte_fin"/>
+        <field labelOnTop="0" name="code_r_enp"/>
+        <field labelOnTop="0" name="date_crea"/>
+        <field labelOnTop="0" name="gest_site"/>
+        <field labelOnTop="0" name="id"/>
+        <field labelOnTop="0" name="id_local"/>
+        <field labelOnTop="0" name="id_mnhn"/>
+        <field labelOnTop="0" name="marin"/>
+        <field labelOnTop="0" name="modif_adm"/>
+        <field labelOnTop="0" name="modif_geo"/>
+        <field labelOnTop="0" name="nom_site"/>
+        <field labelOnTop="0" name="operateur"/>
+        <field labelOnTop="0" name="p10_public"/>
+        <field labelOnTop="0" name="p11_dd"/>
+        <field labelOnTop="0" name="p12_autre"/>
+        <field labelOnTop="0" name="p1_nature"/>
+        <field labelOnTop="0" name="p2_culture"/>
+        <field labelOnTop="0" name="p3_paysage"/>
+        <field labelOnTop="0" name="p4_geologi"/>
+        <field labelOnTop="0" name="p5_speleo"/>
+        <field labelOnTop="0" name="p6_archeo"/>
+        <field labelOnTop="0" name="p7_paleob"/>
+        <field labelOnTop="0" name="p8_anthrop"/>
+        <field labelOnTop="0" name="p9_science"/>
+        <field labelOnTop="0" name="ppn_asso"/>
+        <field labelOnTop="0" name="precision"/>
+        <field labelOnTop="0" name="src_annee"/>
+        <field labelOnTop="0" name="src_geom"/>
+        <field labelOnTop="0" name="surf_off"/>
+        <field labelOnTop="0" name="url_fiche"/>
+      </labelOnTop>
+      <reuseLastValue>
+        <field reuseLastValue="0" name="acte_deb"/>
+        <field reuseLastValue="0" name="acte_fin"/>
+        <field reuseLastValue="0" name="code_r_enp"/>
+        <field reuseLastValue="0" name="date_crea"/>
+        <field reuseLastValue="0" name="gest_site"/>
+        <field reuseLastValue="0" name="id"/>
+        <field reuseLastValue="0" name="id_local"/>
+        <field reuseLastValue="0" name="id_mnhn"/>
+        <field reuseLastValue="0" name="marin"/>
+        <field reuseLastValue="0" name="modif_adm"/>
+        <field reuseLastValue="0" name="modif_geo"/>
+        <field reuseLastValue="0" name="nom_site"/>
+        <field reuseLastValue="0" name="operateur"/>
+        <field reuseLastValue="0" name="p10_public"/>
+        <field reuseLastValue="0" name="p11_dd"/>
+        <field reuseLastValue="0" name="p12_autre"/>
+        <field reuseLastValue="0" name="p1_nature"/>
+        <field reuseLastValue="0" name="p2_culture"/>
+        <field reuseLastValue="0" name="p3_paysage"/>
+        <field reuseLastValue="0" name="p4_geologi"/>
+        <field reuseLastValue="0" name="p5_speleo"/>
+        <field reuseLastValue="0" name="p6_archeo"/>
+        <field reuseLastValue="0" name="p7_paleob"/>
+        <field reuseLastValue="0" name="p8_anthrop"/>
+        <field reuseLastValue="0" name="p9_science"/>
+        <field reuseLastValue="0" name="ppn_asso"/>
+        <field reuseLastValue="0" name="precision"/>
+        <field reuseLastValue="0" name="src_annee"/>
+        <field reuseLastValue="0" name="src_geom"/>
+        <field reuseLastValue="0" name="surf_off"/>
+        <field reuseLastValue="0" name="url_fiche"/>
+      </reuseLastValue>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"nom_site"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshTime="0" type="vector" wkbType="MultiPolygon" minScale="100000000" legendPlaceholderImage="" simplifyLocal="1" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" symbologyReferenceScale="-1" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" readOnly="0" simplifyDrawingHints="1" styleCategories="AllStyleCategories" autoRefreshEnabled="0" geometry="Polygon" labelsEnabled="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>799584.25</xmin>
+        <ymin>6233115</ymin>
+        <xmax>1037748.9375</xmax>
+        <ymax>6470242</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>4.22425716169413956</xmin>
+        <ymin>43.11742965196227573</ymin>
+        <xmax>7.30742707747109321</xmax>
+        <ymax>45.32434067567477598</ymax>
+      </wgs84extent>
+      <id>pnr_8a40f0f5_f235_471d_9253_4604a72ea311</id>
+      <datasource>service='projets' sslmode=verify-ca key='id' estimatedmetadata=true srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='0' table="inpn"."pnr" (geom)</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Parc naturel régional (PNR)</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+          <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract>Parcs naturels régionaux de la région Sud PACA, INPN 2023-02</abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+            <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>145</srsid>
+            <srid>2154</srid>
+            <authid>EPSG:2154</authid>
+            <description>RGF93 / Lambert-93</description>
+            <projectionacronym>lcc</projectionacronym>
+            <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" crs="EPSG:2154" maxz="0" miny="0" minx="0" dimensions="2" minz="0" maxx="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal fixedDuration="0" accumulate="0" limitMode="0" durationField="" enabled="0" endExpression="" endField="" startField="" startExpression="" mode="0" durationUnit="min">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0" referencescale="-1">
+        <symbols>
+          <symbol force_rhr="0" type="fill" alpha="1" clip_to_extent="1" name="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="31,120,180,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="31,120,180,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option type="Map">
+          <Option value="0" type="int" name="embeddedWidgets/count"/>
+          <Option name="variableNames"/>
+          <Option name="variableValues"/>
+        </Option>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory showAxis="1" backgroundAlpha="255" width="15" spacingUnit="MM" enabled="0" maxScaleDenominator="1e+08" barWidth="5" labelPlacementMethod="XHeight" rotationOffset="270" height="15" scaleDependency="Area" opacity="1" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" penColor="#000000" penWidth="0" lineSizeType="MM" minScaleDenominator="0" sizeType="MM" direction="0" spacingUnitScale="3x:0,0,0,0,0,0" diagramOrientation="Up" penAlpha="255" backgroundColor="#ffffff" spacing="5" scaleBasedVisibility="0" lineSizeScale="3x:0,0,0,0,0,0">
+          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+          <axisSymbol>
+            <symbol force_rhr="0" type="line" alpha="1" clip_to_extent="1" name="">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+              <layer class="SimpleLine" locked="0" pass="0" enabled="1">
+                <Option type="Map">
+                  <Option value="0" type="QString" name="align_dash_pattern"/>
+                  <Option value="square" type="QString" name="capstyle"/>
+                  <Option value="5;2" type="QString" name="customdash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="customdash_unit"/>
+                  <Option value="0" type="QString" name="dash_pattern_offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
+                  <Option value="0" type="QString" name="draw_inside_polygon"/>
+                  <Option value="bevel" type="QString" name="joinstyle"/>
+                  <Option value="35,35,35,255" type="QString" name="line_color"/>
+                  <Option value="solid" type="QString" name="line_style"/>
+                  <Option value="0.26" type="QString" name="line_width"/>
+                  <Option value="MM" type="QString" name="line_width_unit"/>
+                  <Option value="0" type="QString" name="offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="offset_unit"/>
+                  <Option value="0" type="QString" name="ring_filter"/>
+                  <Option value="0" type="QString" name="trim_distance_end"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_end_unit"/>
+                  <Option value="0" type="QString" name="trim_distance_start"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_start_unit"/>
+                  <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
+                  <Option value="0" type="QString" name="use_custom_dash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
+                </Option>
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="trim_distance_end" v="0"/>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_end_unit" v="MM"/>
+                <prop k="trim_distance_start" v="0"/>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_start_unit" v="MM"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" type="QString" name="name"/>
+                    <Option name="properties"/>
+                    <Option value="collection" type="QString" name="type"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" dist="0" placement="1" priority="0" zIndex="0" showAll="1" linePlacementFlags="18">
+        <properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration type="Map">
+          <Option type="Map" name="QgsGeometryGapCheck">
+            <Option value="0" type="double" name="allowedGapsBuffer"/>
+            <Option value="false" type="bool" name="allowedGapsEnabled"/>
+            <Option value="" type="QString" name="allowedGapsLayer"/>
+          </Option>
+        </checkConfiguration>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_mnhn">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_local">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="precis">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="src_geom">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="src_annee">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="modif_geo">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nom_site">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="surf_off">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="gest_site">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="date_crea">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="modif_adm">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="url_fiche">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="marin">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p1_nature">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p2_culture">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p3_paysage">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p4_geologi">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p5_speleo">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p6_archeo">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p7_paleob">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p8_anthrop">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p9_science">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p10_public">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p11_dd">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="operateur">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="acte_deb">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="objectid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="acte_fin">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="precision">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p12_autre">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+        <alias field="id_mnhn" index="1" name=""/>
+        <alias field="id_local" index="2" name=""/>
+        <alias field="precis" index="3" name=""/>
+        <alias field="src_geom" index="4" name=""/>
+        <alias field="src_annee" index="5" name=""/>
+        <alias field="modif_geo" index="6" name=""/>
+        <alias field="nom_site" index="7" name=""/>
+        <alias field="surf_off" index="8" name=""/>
+        <alias field="gest_site" index="9" name=""/>
+        <alias field="date_crea" index="10" name=""/>
+        <alias field="modif_adm" index="11" name=""/>
+        <alias field="url_fiche" index="12" name=""/>
+        <alias field="marin" index="13" name=""/>
+        <alias field="p1_nature" index="14" name=""/>
+        <alias field="p2_culture" index="15" name=""/>
+        <alias field="p3_paysage" index="16" name=""/>
+        <alias field="p4_geologi" index="17" name=""/>
+        <alias field="p5_speleo" index="18" name=""/>
+        <alias field="p6_archeo" index="19" name=""/>
+        <alias field="p7_paleob" index="20" name=""/>
+        <alias field="p8_anthrop" index="21" name=""/>
+        <alias field="p9_science" index="22" name=""/>
+        <alias field="p10_public" index="23" name=""/>
+        <alias field="p11_dd" index="24" name=""/>
+        <alias field="operateur" index="25" name=""/>
+        <alias field="acte_deb" index="26" name=""/>
+        <alias field="objectid" index="27" name=""/>
+        <alias field="acte_fin" index="28" name=""/>
+        <alias field="precision" index="29" name=""/>
+        <alias field="p12_autre" index="30" name=""/>
+      </aliases>
+      <defaults>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="id_mnhn" expression="" applyOnUpdate="0"/>
+        <default field="id_local" expression="" applyOnUpdate="0"/>
+        <default field="precis" expression="" applyOnUpdate="0"/>
+        <default field="src_geom" expression="" applyOnUpdate="0"/>
+        <default field="src_annee" expression="" applyOnUpdate="0"/>
+        <default field="modif_geo" expression="" applyOnUpdate="0"/>
+        <default field="nom_site" expression="" applyOnUpdate="0"/>
+        <default field="surf_off" expression="" applyOnUpdate="0"/>
+        <default field="gest_site" expression="" applyOnUpdate="0"/>
+        <default field="date_crea" expression="" applyOnUpdate="0"/>
+        <default field="modif_adm" expression="" applyOnUpdate="0"/>
+        <default field="url_fiche" expression="" applyOnUpdate="0"/>
+        <default field="marin" expression="" applyOnUpdate="0"/>
+        <default field="p1_nature" expression="" applyOnUpdate="0"/>
+        <default field="p2_culture" expression="" applyOnUpdate="0"/>
+        <default field="p3_paysage" expression="" applyOnUpdate="0"/>
+        <default field="p4_geologi" expression="" applyOnUpdate="0"/>
+        <default field="p5_speleo" expression="" applyOnUpdate="0"/>
+        <default field="p6_archeo" expression="" applyOnUpdate="0"/>
+        <default field="p7_paleob" expression="" applyOnUpdate="0"/>
+        <default field="p8_anthrop" expression="" applyOnUpdate="0"/>
+        <default field="p9_science" expression="" applyOnUpdate="0"/>
+        <default field="p10_public" expression="" applyOnUpdate="0"/>
+        <default field="p11_dd" expression="" applyOnUpdate="0"/>
+        <default field="operateur" expression="" applyOnUpdate="0"/>
+        <default field="acte_deb" expression="" applyOnUpdate="0"/>
+        <default field="objectid" expression="" applyOnUpdate="0"/>
+        <default field="acte_fin" expression="" applyOnUpdate="0"/>
+        <default field="precision" expression="" applyOnUpdate="0"/>
+        <default field="p12_autre" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" field="id" unique_strength="1" exp_strength="0" constraints="3"/>
+        <constraint notnull_strength="0" field="id_mnhn" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="id_local" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="precis" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="src_geom" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="src_annee" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="modif_geo" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="nom_site" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="surf_off" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="gest_site" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="date_crea" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="modif_adm" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="url_fiche" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="marin" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p1_nature" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p2_culture" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p3_paysage" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p4_geologi" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p5_speleo" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p6_archeo" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p7_paleob" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p8_anthrop" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p9_science" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p10_public" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p11_dd" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="operateur" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="acte_deb" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="objectid" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="acte_fin" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="precision" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p12_autre" unique_strength="0" exp_strength="0" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="id_mnhn" exp="" desc=""/>
+        <constraint field="id_local" exp="" desc=""/>
+        <constraint field="precis" exp="" desc=""/>
+        <constraint field="src_geom" exp="" desc=""/>
+        <constraint field="src_annee" exp="" desc=""/>
+        <constraint field="modif_geo" exp="" desc=""/>
+        <constraint field="nom_site" exp="" desc=""/>
+        <constraint field="surf_off" exp="" desc=""/>
+        <constraint field="gest_site" exp="" desc=""/>
+        <constraint field="date_crea" exp="" desc=""/>
+        <constraint field="modif_adm" exp="" desc=""/>
+        <constraint field="url_fiche" exp="" desc=""/>
+        <constraint field="marin" exp="" desc=""/>
+        <constraint field="p1_nature" exp="" desc=""/>
+        <constraint field="p2_culture" exp="" desc=""/>
+        <constraint field="p3_paysage" exp="" desc=""/>
+        <constraint field="p4_geologi" exp="" desc=""/>
+        <constraint field="p5_speleo" exp="" desc=""/>
+        <constraint field="p6_archeo" exp="" desc=""/>
+        <constraint field="p7_paleob" exp="" desc=""/>
+        <constraint field="p8_anthrop" exp="" desc=""/>
+        <constraint field="p9_science" exp="" desc=""/>
+        <constraint field="p10_public" exp="" desc=""/>
+        <constraint field="p11_dd" exp="" desc=""/>
+        <constraint field="operateur" exp="" desc=""/>
+        <constraint field="acte_deb" exp="" desc=""/>
+        <constraint field="objectid" exp="" desc=""/>
+        <constraint field="acte_fin" exp="" desc=""/>
+        <constraint field="precision" exp="" desc=""/>
+        <constraint field="p12_autre" exp="" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column hidden="0" type="field" name="id" width="-1"/>
+          <column hidden="0" type="field" name="id_mnhn" width="-1"/>
+          <column hidden="0" type="field" name="id_local" width="-1"/>
+          <column hidden="0" type="field" name="precis" width="-1"/>
+          <column hidden="0" type="field" name="src_geom" width="-1"/>
+          <column hidden="0" type="field" name="src_annee" width="-1"/>
+          <column hidden="0" type="field" name="modif_geo" width="-1"/>
+          <column hidden="0" type="field" name="nom_site" width="-1"/>
+          <column hidden="0" type="field" name="surf_off" width="-1"/>
+          <column hidden="0" type="field" name="gest_site" width="-1"/>
+          <column hidden="0" type="field" name="date_crea" width="-1"/>
+          <column hidden="0" type="field" name="modif_adm" width="-1"/>
+          <column hidden="0" type="field" name="url_fiche" width="-1"/>
+          <column hidden="0" type="field" name="marin" width="-1"/>
+          <column hidden="0" type="field" name="p1_nature" width="-1"/>
+          <column hidden="0" type="field" name="p2_culture" width="-1"/>
+          <column hidden="0" type="field" name="p3_paysage" width="-1"/>
+          <column hidden="0" type="field" name="p4_geologi" width="-1"/>
+          <column hidden="0" type="field" name="p5_speleo" width="-1"/>
+          <column hidden="0" type="field" name="p6_archeo" width="-1"/>
+          <column hidden="0" type="field" name="p7_paleob" width="-1"/>
+          <column hidden="0" type="field" name="p8_anthrop" width="-1"/>
+          <column hidden="0" type="field" name="p9_science" width="-1"/>
+          <column hidden="0" type="field" name="p10_public" width="-1"/>
+          <column hidden="0" type="field" name="p11_dd" width="-1"/>
+          <column hidden="0" type="field" name="operateur" width="-1"/>
+          <column hidden="0" type="field" name="acte_deb" width="-1"/>
+          <column hidden="0" type="field" name="objectid" width="-1"/>
+          <column hidden="0" type="field" name="acte_fin" width="-1"/>
+          <column hidden="0" type="field" name="precision" width="-1"/>
+          <column hidden="0" type="field" name="p12_autre" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui est appelée lorsque le formulaire est
+ouvert.
+
+Utilisez cette fonction pour ajouter une logique supplémentaire à vos formulaires.
+
+Entrez le nom de la fonction dans le champ 
+"Fonction d'initialisation Python".
+Voici un exemple:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="acte_deb"/>
+        <field editable="1" name="acte_fin"/>
+        <field editable="1" name="date_crea"/>
+        <field editable="1" name="gest_site"/>
+        <field editable="1" name="id"/>
+        <field editable="1" name="id_local"/>
+        <field editable="1" name="id_mnhn"/>
+        <field editable="1" name="marin"/>
+        <field editable="1" name="modif_adm"/>
+        <field editable="1" name="modif_geo"/>
+        <field editable="1" name="nom_site"/>
+        <field editable="1" name="objectid"/>
+        <field editable="1" name="operateur"/>
+        <field editable="1" name="p10_public"/>
+        <field editable="1" name="p11_dd"/>
+        <field editable="1" name="p12_autre"/>
+        <field editable="1" name="p1_nature"/>
+        <field editable="1" name="p2_culture"/>
+        <field editable="1" name="p3_paysage"/>
+        <field editable="1" name="p4_geologi"/>
+        <field editable="1" name="p5_speleo"/>
+        <field editable="1" name="p6_archeo"/>
+        <field editable="1" name="p7_paleob"/>
+        <field editable="1" name="p8_anthrop"/>
+        <field editable="1" name="p9_science"/>
+        <field editable="1" name="precis"/>
+        <field editable="1" name="precision"/>
+        <field editable="1" name="src_annee"/>
+        <field editable="1" name="src_geom"/>
+        <field editable="1" name="surf_off"/>
+        <field editable="1" name="url_fiche"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="acte_deb"/>
+        <field labelOnTop="0" name="acte_fin"/>
+        <field labelOnTop="0" name="date_crea"/>
+        <field labelOnTop="0" name="gest_site"/>
+        <field labelOnTop="0" name="id"/>
+        <field labelOnTop="0" name="id_local"/>
+        <field labelOnTop="0" name="id_mnhn"/>
+        <field labelOnTop="0" name="marin"/>
+        <field labelOnTop="0" name="modif_adm"/>
+        <field labelOnTop="0" name="modif_geo"/>
+        <field labelOnTop="0" name="nom_site"/>
+        <field labelOnTop="0" name="objectid"/>
+        <field labelOnTop="0" name="operateur"/>
+        <field labelOnTop="0" name="p10_public"/>
+        <field labelOnTop="0" name="p11_dd"/>
+        <field labelOnTop="0" name="p12_autre"/>
+        <field labelOnTop="0" name="p1_nature"/>
+        <field labelOnTop="0" name="p2_culture"/>
+        <field labelOnTop="0" name="p3_paysage"/>
+        <field labelOnTop="0" name="p4_geologi"/>
+        <field labelOnTop="0" name="p5_speleo"/>
+        <field labelOnTop="0" name="p6_archeo"/>
+        <field labelOnTop="0" name="p7_paleob"/>
+        <field labelOnTop="0" name="p8_anthrop"/>
+        <field labelOnTop="0" name="p9_science"/>
+        <field labelOnTop="0" name="precis"/>
+        <field labelOnTop="0" name="precision"/>
+        <field labelOnTop="0" name="src_annee"/>
+        <field labelOnTop="0" name="src_geom"/>
+        <field labelOnTop="0" name="surf_off"/>
+        <field labelOnTop="0" name="url_fiche"/>
+      </labelOnTop>
+      <reuseLastValue>
+        <field reuseLastValue="0" name="acte_deb"/>
+        <field reuseLastValue="0" name="acte_fin"/>
+        <field reuseLastValue="0" name="date_crea"/>
+        <field reuseLastValue="0" name="gest_site"/>
+        <field reuseLastValue="0" name="id"/>
+        <field reuseLastValue="0" name="id_local"/>
+        <field reuseLastValue="0" name="id_mnhn"/>
+        <field reuseLastValue="0" name="marin"/>
+        <field reuseLastValue="0" name="modif_adm"/>
+        <field reuseLastValue="0" name="modif_geo"/>
+        <field reuseLastValue="0" name="nom_site"/>
+        <field reuseLastValue="0" name="objectid"/>
+        <field reuseLastValue="0" name="operateur"/>
+        <field reuseLastValue="0" name="p10_public"/>
+        <field reuseLastValue="0" name="p11_dd"/>
+        <field reuseLastValue="0" name="p12_autre"/>
+        <field reuseLastValue="0" name="p1_nature"/>
+        <field reuseLastValue="0" name="p2_culture"/>
+        <field reuseLastValue="0" name="p3_paysage"/>
+        <field reuseLastValue="0" name="p4_geologi"/>
+        <field reuseLastValue="0" name="p5_speleo"/>
+        <field reuseLastValue="0" name="p6_archeo"/>
+        <field reuseLastValue="0" name="p7_paleob"/>
+        <field reuseLastValue="0" name="p8_anthrop"/>
+        <field reuseLastValue="0" name="p9_science"/>
+        <field reuseLastValue="0" name="precis"/>
+        <field reuseLastValue="0" name="precision"/>
+        <field reuseLastValue="0" name="src_annee"/>
+        <field reuseLastValue="0" name="src_geom"/>
+        <field reuseLastValue="0" name="surf_off"/>
+        <field reuseLastValue="0" name="url_fiche"/>
+      </reuseLastValue>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"nom_site"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshTime="0" type="vector" wkbType="MultiPolygon" minScale="100000000" legendPlaceholderImage="" simplifyLocal="1" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" symbologyReferenceScale="-1" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" readOnly="0" simplifyDrawingHints="1" styleCategories="AllStyleCategories" autoRefreshEnabled="0" geometry="Polygon" labelsEnabled="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>832817.35019999695941806</xmin>
+        <ymin>6261972.81559094041585922</ymin>
+        <xmax>1012307.09840000001713634</xmax>
+        <ymax>6429795.4899999899789691</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>4.64007963503392684</xmin>
+        <ymin>43.38827441061904722</ymin>
+        <xmax>6.95769537564796448</xmax>
+        <ymax>44.95462094491056604</ymax>
+      </wgs84extent>
+      <id>rnr_8dec0a2e_bc77_4ca1_8163_3494565728b0</id>
+      <datasource>service='projets' sslmode=verify-ca key='id' estimatedmetadata=true srid=2154 type=MultiPolygon checkPrimaryKeyUnicity='0' table="inpn"."rnr" (geom)</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Réserve naturelle régionale (RNR)</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+          <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract>Réserves naturelles régionales de la région Sud PACA, INPN 2023-02</abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+            <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>145</srsid>
+            <srid>2154</srid>
+            <authid>EPSG:2154</authid>
+            <description>RGF93 / Lambert-93</description>
+            <projectionacronym>lcc</projectionacronym>
+            <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" crs="EPSG:2154" maxz="0" miny="0" minx="0" dimensions="2" minz="0" maxx="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal fixedDuration="0" accumulate="0" limitMode="0" durationField="" enabled="0" endExpression="" endField="" startField="" startExpression="" mode="0" durationUnit="min">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0" referencescale="-1">
+        <symbols>
+          <symbol force_rhr="0" type="fill" alpha="1" clip_to_extent="1" name="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="227,26,28,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option type="Map">
+          <Option value="0" type="int" name="embeddedWidgets/count"/>
+          <Option name="variableNames"/>
+          <Option name="variableValues"/>
+        </Option>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory showAxis="1" backgroundAlpha="255" width="15" spacingUnit="MM" enabled="0" maxScaleDenominator="1e+08" barWidth="5" labelPlacementMethod="XHeight" rotationOffset="270" height="15" scaleDependency="Area" opacity="1" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" penColor="#000000" penWidth="0" lineSizeType="MM" minScaleDenominator="0" sizeType="MM" direction="0" spacingUnitScale="3x:0,0,0,0,0,0" diagramOrientation="Up" penAlpha="255" backgroundColor="#ffffff" spacing="5" scaleBasedVisibility="0" lineSizeScale="3x:0,0,0,0,0,0">
+          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+          <attribute field="" color="#000000" label="" colorOpacity="1"/>
+          <axisSymbol>
+            <symbol force_rhr="0" type="line" alpha="1" clip_to_extent="1" name="">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+              <layer class="SimpleLine" locked="0" pass="0" enabled="1">
+                <Option type="Map">
+                  <Option value="0" type="QString" name="align_dash_pattern"/>
+                  <Option value="square" type="QString" name="capstyle"/>
+                  <Option value="5;2" type="QString" name="customdash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="customdash_unit"/>
+                  <Option value="0" type="QString" name="dash_pattern_offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
+                  <Option value="0" type="QString" name="draw_inside_polygon"/>
+                  <Option value="bevel" type="QString" name="joinstyle"/>
+                  <Option value="35,35,35,255" type="QString" name="line_color"/>
+                  <Option value="solid" type="QString" name="line_style"/>
+                  <Option value="0.26" type="QString" name="line_width"/>
+                  <Option value="MM" type="QString" name="line_width_unit"/>
+                  <Option value="0" type="QString" name="offset"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="offset_unit"/>
+                  <Option value="0" type="QString" name="ring_filter"/>
+                  <Option value="0" type="QString" name="trim_distance_end"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_end_unit"/>
+                  <Option value="0" type="QString" name="trim_distance_start"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
+                  <Option value="MM" type="QString" name="trim_distance_start_unit"/>
+                  <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
+                  <Option value="0" type="QString" name="use_custom_dash"/>
+                  <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
+                </Option>
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="trim_distance_end" v="0"/>
+                <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_end_unit" v="MM"/>
+                <prop k="trim_distance_start" v="0"/>
+                <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="trim_distance_start_unit" v="MM"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" type="QString" name="name"/>
+                    <Option name="properties"/>
+                    <Option value="collection" type="QString" name="type"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" dist="0" placement="1" priority="0" zIndex="0" showAll="1" linePlacementFlags="18">
+        <properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration type="Map">
+          <Option type="Map" name="QgsGeometryGapCheck">
+            <Option value="0" type="double" name="allowedGapsBuffer"/>
+            <Option value="false" type="bool" name="allowedGapsEnabled"/>
+            <Option value="" type="QString" name="allowedGapsLayer"/>
+          </Option>
+        </checkConfiguration>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="objectid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_local">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="nom_site">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="date_crea">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="modif_adm">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="modif_geo">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="url_fiche">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="surf_off">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="acte_deb">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="acte_fin">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="gest_site">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="operateur">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="precision">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="src_geom">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="src_annee">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="marin">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p1_nature">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p2_culture">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p3_paysage">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p4_geologi">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p5_speleo">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p6_archeo">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p7_paleob">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p8_anthrop">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p9_science">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p10_public">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p11_dd">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="p12_autre">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id_mnhn">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+        <alias field="objectid" index="1" name=""/>
+        <alias field="id_local" index="2" name=""/>
+        <alias field="nom_site" index="3" name=""/>
+        <alias field="date_crea" index="4" name=""/>
+        <alias field="modif_adm" index="5" name=""/>
+        <alias field="modif_geo" index="6" name=""/>
+        <alias field="url_fiche" index="7" name=""/>
+        <alias field="surf_off" index="8" name=""/>
+        <alias field="acte_deb" index="9" name=""/>
+        <alias field="acte_fin" index="10" name=""/>
+        <alias field="gest_site" index="11" name=""/>
+        <alias field="operateur" index="12" name=""/>
+        <alias field="precision" index="13" name=""/>
+        <alias field="src_geom" index="14" name=""/>
+        <alias field="src_annee" index="15" name=""/>
+        <alias field="marin" index="16" name=""/>
+        <alias field="p1_nature" index="17" name=""/>
+        <alias field="p2_culture" index="18" name=""/>
+        <alias field="p3_paysage" index="19" name=""/>
+        <alias field="p4_geologi" index="20" name=""/>
+        <alias field="p5_speleo" index="21" name=""/>
+        <alias field="p6_archeo" index="22" name=""/>
+        <alias field="p7_paleob" index="23" name=""/>
+        <alias field="p8_anthrop" index="24" name=""/>
+        <alias field="p9_science" index="25" name=""/>
+        <alias field="p10_public" index="26" name=""/>
+        <alias field="p11_dd" index="27" name=""/>
+        <alias field="p12_autre" index="28" name=""/>
+        <alias field="id_mnhn" index="29" name=""/>
+      </aliases>
+      <defaults>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="objectid" expression="" applyOnUpdate="0"/>
+        <default field="id_local" expression="" applyOnUpdate="0"/>
+        <default field="nom_site" expression="" applyOnUpdate="0"/>
+        <default field="date_crea" expression="" applyOnUpdate="0"/>
+        <default field="modif_adm" expression="" applyOnUpdate="0"/>
+        <default field="modif_geo" expression="" applyOnUpdate="0"/>
+        <default field="url_fiche" expression="" applyOnUpdate="0"/>
+        <default field="surf_off" expression="" applyOnUpdate="0"/>
+        <default field="acte_deb" expression="" applyOnUpdate="0"/>
+        <default field="acte_fin" expression="" applyOnUpdate="0"/>
+        <default field="gest_site" expression="" applyOnUpdate="0"/>
+        <default field="operateur" expression="" applyOnUpdate="0"/>
+        <default field="precision" expression="" applyOnUpdate="0"/>
+        <default field="src_geom" expression="" applyOnUpdate="0"/>
+        <default field="src_annee" expression="" applyOnUpdate="0"/>
+        <default field="marin" expression="" applyOnUpdate="0"/>
+        <default field="p1_nature" expression="" applyOnUpdate="0"/>
+        <default field="p2_culture" expression="" applyOnUpdate="0"/>
+        <default field="p3_paysage" expression="" applyOnUpdate="0"/>
+        <default field="p4_geologi" expression="" applyOnUpdate="0"/>
+        <default field="p5_speleo" expression="" applyOnUpdate="0"/>
+        <default field="p6_archeo" expression="" applyOnUpdate="0"/>
+        <default field="p7_paleob" expression="" applyOnUpdate="0"/>
+        <default field="p8_anthrop" expression="" applyOnUpdate="0"/>
+        <default field="p9_science" expression="" applyOnUpdate="0"/>
+        <default field="p10_public" expression="" applyOnUpdate="0"/>
+        <default field="p11_dd" expression="" applyOnUpdate="0"/>
+        <default field="p12_autre" expression="" applyOnUpdate="0"/>
+        <default field="id_mnhn" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" field="id" unique_strength="1" exp_strength="0" constraints="3"/>
+        <constraint notnull_strength="0" field="objectid" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="id_local" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="nom_site" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="date_crea" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="modif_adm" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="modif_geo" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="url_fiche" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="surf_off" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="acte_deb" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="acte_fin" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="gest_site" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="operateur" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="precision" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="src_geom" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="src_annee" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="marin" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p1_nature" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p2_culture" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p3_paysage" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p4_geologi" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p5_speleo" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p6_archeo" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p7_paleob" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p8_anthrop" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p9_science" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p10_public" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p11_dd" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="p12_autre" unique_strength="0" exp_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" field="id_mnhn" unique_strength="0" exp_strength="0" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="objectid" exp="" desc=""/>
+        <constraint field="id_local" exp="" desc=""/>
+        <constraint field="nom_site" exp="" desc=""/>
+        <constraint field="date_crea" exp="" desc=""/>
+        <constraint field="modif_adm" exp="" desc=""/>
+        <constraint field="modif_geo" exp="" desc=""/>
+        <constraint field="url_fiche" exp="" desc=""/>
+        <constraint field="surf_off" exp="" desc=""/>
+        <constraint field="acte_deb" exp="" desc=""/>
+        <constraint field="acte_fin" exp="" desc=""/>
+        <constraint field="gest_site" exp="" desc=""/>
+        <constraint field="operateur" exp="" desc=""/>
+        <constraint field="precision" exp="" desc=""/>
+        <constraint field="src_geom" exp="" desc=""/>
+        <constraint field="src_annee" exp="" desc=""/>
+        <constraint field="marin" exp="" desc=""/>
+        <constraint field="p1_nature" exp="" desc=""/>
+        <constraint field="p2_culture" exp="" desc=""/>
+        <constraint field="p3_paysage" exp="" desc=""/>
+        <constraint field="p4_geologi" exp="" desc=""/>
+        <constraint field="p5_speleo" exp="" desc=""/>
+        <constraint field="p6_archeo" exp="" desc=""/>
+        <constraint field="p7_paleob" exp="" desc=""/>
+        <constraint field="p8_anthrop" exp="" desc=""/>
+        <constraint field="p9_science" exp="" desc=""/>
+        <constraint field="p10_public" exp="" desc=""/>
+        <constraint field="p11_dd" exp="" desc=""/>
+        <constraint field="p12_autre" exp="" desc=""/>
+        <constraint field="id_mnhn" exp="" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column hidden="0" type="field" name="id" width="-1"/>
+          <column hidden="0" type="field" name="objectid" width="-1"/>
+          <column hidden="0" type="field" name="id_local" width="-1"/>
+          <column hidden="0" type="field" name="nom_site" width="-1"/>
+          <column hidden="0" type="field" name="date_crea" width="-1"/>
+          <column hidden="0" type="field" name="modif_adm" width="-1"/>
+          <column hidden="0" type="field" name="modif_geo" width="-1"/>
+          <column hidden="0" type="field" name="url_fiche" width="-1"/>
+          <column hidden="0" type="field" name="surf_off" width="-1"/>
+          <column hidden="0" type="field" name="acte_deb" width="-1"/>
+          <column hidden="0" type="field" name="acte_fin" width="-1"/>
+          <column hidden="0" type="field" name="gest_site" width="-1"/>
+          <column hidden="0" type="field" name="operateur" width="-1"/>
+          <column hidden="0" type="field" name="precision" width="-1"/>
+          <column hidden="0" type="field" name="src_geom" width="-1"/>
+          <column hidden="0" type="field" name="src_annee" width="-1"/>
+          <column hidden="0" type="field" name="marin" width="-1"/>
+          <column hidden="0" type="field" name="p1_nature" width="-1"/>
+          <column hidden="0" type="field" name="p2_culture" width="-1"/>
+          <column hidden="0" type="field" name="p3_paysage" width="-1"/>
+          <column hidden="0" type="field" name="p4_geologi" width="-1"/>
+          <column hidden="0" type="field" name="p5_speleo" width="-1"/>
+          <column hidden="0" type="field" name="p6_archeo" width="-1"/>
+          <column hidden="0" type="field" name="p7_paleob" width="-1"/>
+          <column hidden="0" type="field" name="p8_anthrop" width="-1"/>
+          <column hidden="0" type="field" name="p9_science" width="-1"/>
+          <column hidden="0" type="field" name="p10_public" width="-1"/>
+          <column hidden="0" type="field" name="p11_dd" width="-1"/>
+          <column hidden="0" type="field" name="p12_autre" width="-1"/>
+          <column hidden="0" type="field" name="id_mnhn" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui est appelée lorsque le formulaire est
+ouvert.
+
+Utilisez cette fonction pour ajouter une logique supplémentaire à vos formulaires.
+
+Entrez le nom de la fonction dans le champ 
+"Fonction d'initialisation Python".
+Voici un exemple:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="acte_deb"/>
+        <field editable="1" name="acte_fin"/>
+        <field editable="1" name="date_crea"/>
+        <field editable="1" name="gest_site"/>
+        <field editable="1" name="id"/>
+        <field editable="1" name="id_local"/>
+        <field editable="1" name="id_mnhn"/>
+        <field editable="1" name="marin"/>
+        <field editable="1" name="modif_adm"/>
+        <field editable="1" name="modif_geo"/>
+        <field editable="1" name="nom_site"/>
+        <field editable="1" name="objectid"/>
+        <field editable="1" name="operateur"/>
+        <field editable="1" name="p10_public"/>
+        <field editable="1" name="p11_dd"/>
+        <field editable="1" name="p12_autre"/>
+        <field editable="1" name="p1_nature"/>
+        <field editable="1" name="p2_culture"/>
+        <field editable="1" name="p3_paysage"/>
+        <field editable="1" name="p4_geologi"/>
+        <field editable="1" name="p5_speleo"/>
+        <field editable="1" name="p6_archeo"/>
+        <field editable="1" name="p7_paleob"/>
+        <field editable="1" name="p8_anthrop"/>
+        <field editable="1" name="p9_science"/>
+        <field editable="1" name="precision"/>
+        <field editable="1" name="src_annee"/>
+        <field editable="1" name="src_geom"/>
+        <field editable="1" name="surf_off"/>
+        <field editable="1" name="url_fiche"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="acte_deb"/>
+        <field labelOnTop="0" name="acte_fin"/>
+        <field labelOnTop="0" name="date_crea"/>
+        <field labelOnTop="0" name="gest_site"/>
+        <field labelOnTop="0" name="id"/>
+        <field labelOnTop="0" name="id_local"/>
+        <field labelOnTop="0" name="id_mnhn"/>
+        <field labelOnTop="0" name="marin"/>
+        <field labelOnTop="0" name="modif_adm"/>
+        <field labelOnTop="0" name="modif_geo"/>
+        <field labelOnTop="0" name="nom_site"/>
+        <field labelOnTop="0" name="objectid"/>
+        <field labelOnTop="0" name="operateur"/>
+        <field labelOnTop="0" name="p10_public"/>
+        <field labelOnTop="0" name="p11_dd"/>
+        <field labelOnTop="0" name="p12_autre"/>
+        <field labelOnTop="0" name="p1_nature"/>
+        <field labelOnTop="0" name="p2_culture"/>
+        <field labelOnTop="0" name="p3_paysage"/>
+        <field labelOnTop="0" name="p4_geologi"/>
+        <field labelOnTop="0" name="p5_speleo"/>
+        <field labelOnTop="0" name="p6_archeo"/>
+        <field labelOnTop="0" name="p7_paleob"/>
+        <field labelOnTop="0" name="p8_anthrop"/>
+        <field labelOnTop="0" name="p9_science"/>
+        <field labelOnTop="0" name="precision"/>
+        <field labelOnTop="0" name="src_annee"/>
+        <field labelOnTop="0" name="src_geom"/>
+        <field labelOnTop="0" name="surf_off"/>
+        <field labelOnTop="0" name="url_fiche"/>
+      </labelOnTop>
+      <reuseLastValue>
+        <field reuseLastValue="0" name="acte_deb"/>
+        <field reuseLastValue="0" name="acte_fin"/>
+        <field reuseLastValue="0" name="date_crea"/>
+        <field reuseLastValue="0" name="gest_site"/>
+        <field reuseLastValue="0" name="id"/>
+        <field reuseLastValue="0" name="id_local"/>
+        <field reuseLastValue="0" name="id_mnhn"/>
+        <field reuseLastValue="0" name="marin"/>
+        <field reuseLastValue="0" name="modif_adm"/>
+        <field reuseLastValue="0" name="modif_geo"/>
+        <field reuseLastValue="0" name="nom_site"/>
+        <field reuseLastValue="0" name="objectid"/>
+        <field reuseLastValue="0" name="operateur"/>
+        <field reuseLastValue="0" name="p10_public"/>
+        <field reuseLastValue="0" name="p11_dd"/>
+        <field reuseLastValue="0" name="p12_autre"/>
+        <field reuseLastValue="0" name="p1_nature"/>
+        <field reuseLastValue="0" name="p2_culture"/>
+        <field reuseLastValue="0" name="p3_paysage"/>
+        <field reuseLastValue="0" name="p4_geologi"/>
+        <field reuseLastValue="0" name="p5_speleo"/>
+        <field reuseLastValue="0" name="p6_archeo"/>
+        <field reuseLastValue="0" name="p7_paleob"/>
+        <field reuseLastValue="0" name="p8_anthrop"/>
+        <field reuseLastValue="0" name="p9_science"/>
+        <field reuseLastValue="0" name="precision"/>
+        <field reuseLastValue="0" name="src_annee"/>
+        <field reuseLastValue="0" name="src_geom"/>
+        <field reuseLastValue="0" name="surf_off"/>
+        <field reuseLastValue="0" name="url_fiche"/>
+      </reuseLastValue>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"nom_site"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="pn_436acf2c_f155_40b9_b854_8c8b0be6f11f"/>
+    <layer id="pnr_8a40f0f5_f235_471d_9253_4604a72ea311"/>
+    <layer id="rnr_8dec0a2e_bc77_4ca1_8163_3494565728b0"/>
+  </layerorder>
+  <properties>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">0</AvoidIntersectionsMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Measure>
+      <Ellipsoid type="QString">EPSG:7019</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">1</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">true</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+  </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option value="" type="QString" name="name"/>
+      <Option name="properties"/>
+      <Option value="collection" type="QString" name="type"/>
+    </Option>
+  </dataDefinedServerProperties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author>Vincent Prunet</author>
+    <creation>2023-02-22T18:52:39</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0" rotation="0">
+    <Scales/>
+    <DefaultViewExtent xmax="1090352.78755815466865897" ymin="6276566.49337477050721645" ymax="6395799.40829136967658997" xmin="951308.58432846062351018">
+      <spatialrefsys>
+        <wkt>PROJCRS["RGF93 / Lambert-93",BASEGEOGCRS["RGF93",DATUM["Reseau Geodesique Francais 1993",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4171]],CONVERSION["Lambert-93",METHOD["Lambert Conic Conformal (2SP)",ID["EPSG",9802]],PARAMETER["Latitude of false origin",46.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",44,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",700000,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",6600000,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["France"],BBOX[41.15,-9.86,51.56,10.38]],ID["EPSG",2154]]</wkt>
+        <proj4>+proj=lcc +lat_0=46.5 +lon_0=3 +lat_1=49 +lat_2=44 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>145</srsid>
+        <srid>2154</srid>
+        <authid>EPSG:2154</authid>
+        <description>RGF93 / Lambert-93</description>
+        <projectionacronym>lcc</projectionacronym>
+        <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </DefaultViewExtent>
+  </ProjectViewSettings>
+  <ProjectTimeSettings frameRate="1" timeStep="1" cumulativeTemporalRange="0" timeStepUnit="h"/>
+  <ProjectDisplaySettings>
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option value="" type="QChar" name="decimal_separator"/>
+        <Option value="6" type="int" name="decimals"/>
+        <Option value="0" type="int" name="direction_format"/>
+        <Option value="0" type="int" name="rounding_type"/>
+        <Option value="false" type="bool" name="show_plus"/>
+        <Option value="true" type="bool" name="show_thousand_separator"/>
+        <Option value="false" type="bool" name="show_trailing_zeros"/>
+        <Option value="" type="QChar" name="thousand_separator"/>
+      </Option>
+    </BearingFormat>
+  </ProjectDisplaySettings>
+</qgis>

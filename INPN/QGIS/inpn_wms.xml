@@ -1,0 +1,4 @@
+<!DOCTYPE connections>
+<qgsWMSConnections version="1.0">
+    <wms referer="" ignoreGetFeatureInfoURI="false" smoothPixmapTransform="false" password="" ignoreGetMapURI="false" url="https://ws.carmencarto.fr/WMS/119/fxx_inpn" username="" name="INPN - Espaces naturels" invertAxisOrientation="false" ignoreAxisOrientation="false" dpiMode="7"/>
+</qgsWMSConnections>
