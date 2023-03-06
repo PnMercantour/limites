@@ -7,8 +7,6 @@ Le schema `limites` donne accès aux données géographiques réglementaires du 
  - ....
 
 
-* TOC
-{:toc}
 
 
 ## Tables remarquables
