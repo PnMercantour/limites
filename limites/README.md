@@ -1,23 +1,43 @@
-# Utilisation du schema `limites` dans les projets SQL et QGIS
+# Limites
 
-Le schema `limites` donne accès aux données géographiques réglementaires du Parc national du Mercantour, par exemple les limites réglementaires du PNM, la liste des communes de l'aire optimale d'adhésion, la répartition géographique des services territoriaux.
+Le schema `limites` donne accès aux données géographiques réglementaires du Parc national du Mercantour:
+ - les limites réglementaires du PNM,
+ - la liste des communes de l'aire optimale d'adhésion, 
+ - la répartition géographique des services territoriaux
+ - ....
 
-## Visualiser les données dans QGIS
+## Tables remarquables
 
-Les tables suivantes peuvent être chargées directement dans QGIS, un style par défaut leur est (en principe) associé. Pour les traitements complexes, voir le paragraphe [utilisation avancée](#utilisation-avancée).
 
-### limites.limites
+#### limites.limites
+Ne continent que 6 entités: coeur, aire d'adhésion.....
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| id      | (PK) int       |   na |
+| nom   | string        | nom de la zone (coeur, aire d'adhésion...)     |
+| description   | string        | Détail sur le nom     |
+| geom   | geometry        | nom de la zone (coeur, aire d'adhésion...)     |
+| geom_simple   | geometry        | geométrie simplifiée     |
 
-`limites.limites` est la table des aires du PNM:
+<!-- pas clair ce que la colonne "layer" veut dire -->
 
-- coeur,
-- aire (optimale) d'adhésion,
-- aire (optimale) totale
-- réserve intégrale
+limites.communes
+
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| nom   | string        | nom de la zone (coeur, aire d'adhésion...)     |
+
+| code_insee      | int       | c'est le numéro du machin   |
+
+| code_insee      | int       | c'est le numéro du machin   |
+| n_truc   | string        | c'est le numéro du truc      |
+
+#### table_3
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+|...      |...       |...   |
 
 ### limites.communes
-
-`limites.communes` est la table des communes du PNM. Elle contient en particulier les attributs suivants:
 
 - nom,
 - code_insee,
@@ -58,6 +78,16 @@ L'ensemble des mailles de l'aire totale du PNM peut par exemple être calculé a
 ```sql
 select * from limites.grid where surface_coeur + surface_aire_adhesion > 0;
 ```
+
+
+
+# Utilisation du schema `limites` dans les projets SQL et QGIS
+
+
+## Visualiser les données dans QGIS
+
+Les tables suivantes peuvent être chargées directement dans QGIS, un style par défaut leur est (en principe) associé. Pour les traitements complexes, voir le paragraphe [utilisation avancée](#utilisation-avancée).
+
 
 ## Utilisation avancée
 
