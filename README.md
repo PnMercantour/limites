@@ -71,6 +71,7 @@ Vue de synthèse donnant pour chaque maille de limites.maille1k la surface appar
 ### limites.grid1k_area
 
 _Ne contient que les polygones qui sont dans le parc_
+
 Intersections des mailles 1000 et des polygones remarquables du PNM (table _area_),
 c'est-à-dire qu'il contient des mailles fragmentées selon les zones qui les recouvrent.
 
@@ -97,7 +98,7 @@ Contient 6 entités: coeur, aire d'adhésion.....
 
 
 ### limites.maille1k
-Maillage de 1km de côté pavage normalisé (EPSG:2154) <!-- les autres couches ne sont pas dans la même projection? -->
+Maillage de 1km de côté pavage normalisé  <!-- (EPSG:2154) les autres couches ne sont pas dans la même projection? -->
 
 | Nom de la colonne      | Type | Description     |
 | :---        |    :----:   |          :---: |
