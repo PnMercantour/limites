@@ -8,30 +8,36 @@ Le schema `limites` donne accès aux données géographiques réglementaires du 
 
 
 
-
 ## Tables remarquables
+
+Les tables suivantes peuvent être chargées directement dans QGIS.  Un style par défaut leur est <!-- (en principe) -->associé. 
+
+ - limites.limites
+ - limites.communes
+ - limites.maille500m
+ - limites.maille1k
+ - limites.maille10k
+
+
+
+## Description détaillée des tables
 _Les tableaux suivants décrivent les principales tables du schéma, et certaines de leur variables. Sauf précision, il s'agit de tables._
 
 ### limites.area
 
-Table de référence des objets géographiques remarquables du PNM (zones réglementaires, communes, ...)
+Objets géographiques remarquables du PNM (zones réglementaires, communes, vallées ...)
 
-- id: clé primaire
-- id_type: type d'objet (voir la table area_type)
-- name: nom de l'objet
-- description
-- geom: géométrie(multipolygon) de l'objet
 
 | Nom de la colonne      | Type | Description     |
 | :---        |    :----:   |          :---: |
-| id      | (PK) int       |   na |
+| id      | (PK) int       |   ... |
 | id_type   | int        | numéro de correspondance avec la table _area.type_     |
 | name   | string        | nom de l'objet     | <!-- remplacer "name" par "nom" -->
-| description   | string        |      |
-| geom   | geometry (multipolygon)        | |
+| description   | string        | ...     |
+| geom   | geometry (multipolygon)        | ... |
 
 
-Permet de traiter de façon uniforme les objets géographiques remarquables de types différents (par exemple le calcul de l'intersection de ces objets avec les mailles 1km)
+<!-- Permet de traiter de façon uniforme les objets géographiques remarquables de types différents (par exemple le calcul de l'intersection de ces objets avec les mailles 1km) -->
 
 
 ### limites.area_type
@@ -40,26 +46,26 @@ Table de correspondance pour les objets géographiques remarquables.
 
 | Nom de la colonne      | Type | Description     |
 | :---        |    :----:   |          :---: |
-| id      | (PK) int       |   na |
+| id      | (PK) int       |   ... |
 | type   | int        | numéro d'identifiant de type d'objet géographique - fait la correspondance avec id_type de _limites.area_     |
-| description      | string       |    |
+| description      | string       |  ...   |
 
 ### limites.communes
 Contient 28 entités.
 
 | Nom de la colonne      | Type | Description     |
 | :---        |    :----:   |          :---: |
-| id      | (PK) int       |   na |
+| id      | (PK) int       |   ... |
 | nom   | string        | nom de la commune  |
-| code_insee      | int       | |
+| code_insee      | int       | ...|
 | canton/depart/ arrondisst/region     | str       |  nom de l'entité géographique  |
 | popul | int       | population au dernier recensement <!-- lequel? --> |
 | addhesion      | string       | deux valeurs: "oui", "non", concernant l'adhésion à la charte du PNM   |
 
 
 ### limites.grid (Vue)
-<!-- est-ce que cette grille couvre l'ensemble  -->
-Vue de synthèse, par maille 1km, donnant pour chaque maille de limites.maille1k la surface appartenant à chaque zone, et le nom de la vallée principale.
+<!-- est-ce que cette grille couvre l'ensemble?  -->
+Vue de synthèse donnant pour chaque maille de limites.maille1k la surface appartenant à chaque zone, et le nom de la vallée principale.
 
 
 ### limites.grid1k_area
@@ -70,17 +76,17 @@ c'est-à-dire qu'il contient des mailles fragmentées selon les zones qui les re
 
 | Nom de la colonne      | Type | Description     |
 | :---        |    :----:   |          :---: |
-| id_grid      | (PK) int       |   na |
-|id_area	| (PK) int| na|
+| id_grid      | (PK) int       |   ... |
+|id_area	| (PK) int|  ...|
 | surface   | string        | nom de la commune  |
-| geom      | geometry       | |
+| geom      | geometry       | ...|
 
 
 ### limites.limites
 Contient 6 entités: coeur, aire d'adhésion.....
 | Nom de la colonne      | Type | Description     |
 | :---        |    :----:   |          :---: |
-| id      | (PK) int       |   na |
+| id      | (PK) int       |   ... |
 | nom   | string        | nom de la zone (coeur, aire d'adhésion...)     |
 | description   | string        | Détail sur le nom     |
 | geom   | geometry        | nom de la zone (coeur, aire d'adhésion...)     |
@@ -95,8 +101,8 @@ Maillage de 1km de côté pavage normalisé (EPSG:2154) <!-- les autres couches 
 
 | Nom de la colonne      | Type | Description     |
 | :---        |    :----:   |          :---: |
-| id      | (PK) int       |   na |
-| id_sig   | string        |      |
+| id      | (PK) int       |   ... |
+| id_sig   | string        |    ...  |
 | code_10km   | string        | numéro identifiant la maille dans un carré de 10 km <!-- ? -->      |
 | aire_*   | boolean        | indication (True/False) si la maille est dans une zone d'intérêt     |
 
@@ -107,39 +113,17 @@ Maillage de 500m de côté
 
 | Nom de la colonne      | Type | Description     |
 | :---        |    :----:   |          :---: |
-| id      | (PK) int       |   na |
+| id      | (PK) int       |   ... |
 | position   | string        |   position de la maille 500m dans la maille 1km qui la contient (NE, NO, SE, SW)  |
 | id_parent | int| id de la maille 1km parente |
 
 
-
-
-
-
-
-
-
-
-
 ______
 
-limites.grid
-L'ensemble des mailles de l'aire totale du PNM peut par exemple être calculé ainsi:
 
-```sql
-select * from limites.grid where surface_coeur + surface_aire_adhesion > 0;
-```
-
-
+<!-- toute la suite devrait être dans un autre document dédié au sql -->
 
 # Utilisation du schema `limites` dans les projets SQL et QGIS
-
-
-## Visualiser les données dans QGIS
-
-Les tables suivantes peuvent être chargées directement dans QGIS, un style par défaut leur est (en principe) associé. Pour les traitements complexes, voir le paragraphe [utilisation avancée](#utilisation-avancée).
-
-
 
 ## Log Interne
 
@@ -154,22 +138,18 @@ Les traitements géométriques (intersections, inclusions) sont plus rapides lor
 
 ### fonction limites.get_id_type
 
-Retourne l'identifiant correspondant à un type. Par exemple
-
+Retourne l'identifiant correspondant à un type. Par exemple:
 ```sql
 select limites.get_id_type('st');
 ```
-
 retourne l'identifiant de type des services territoriaux.
 
 ### fonction limites.get_id_area
 
 Retourne l'identifiant d'un objet géographique remarquable à partir de son type et de son nom. Par exemple
-
 ```sql
 select limites.get_id_area('limites', 'coeur');
 ```
-
 retourne l'identifiant de l'objet `coeur` de type `limites`.
 
 
@@ -180,7 +160,7 @@ retourne l'identifiant de l'objet `coeur` de type `limites`.
 La table peut être utilisée directement ou en conjonction avec les mailles 1000 pour déterminer les relations géométriques entre une géométrie arbitraire et l'un des multipolygones.
 
 
-Surface coeur de chaque commune
+Exemple: Pour retrouver la surface coeur de chaque commune
 
 ```sql
 select
@@ -211,7 +191,7 @@ order by
 	area.name;
 ```
 
-Surface du ST Haut Var Cians en coeur de parc
+Pour retrouver la Surface du ST Haut Var Cians en coeur de parc
 
 ```sql
 -- méthode grid
