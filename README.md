@@ -7,7 +7,8 @@ Le schema `limites` donne accès aux données géographiques réglementaires du 
  - ....
 
 
-__TOC__
+* TOC
+{:toc}
 
 
 ## Tables remarquables
@@ -63,7 +64,7 @@ Contient 28 entités.
 Vue de synthèse, par maille 1km, donnant pour chaque maille de limites.maille1k la surface appartenant à chaque zone, et le nom de la vallée principale.
 
 
-### grid1k_area
+### limites.grid1k_area
 
 _Ne contient que les polygones qui sont dans le parc_
 Intersections des mailles 1000 et des polygones remarquables du PNM (table _area_),
