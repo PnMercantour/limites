@@ -6,8 +6,76 @@ Le schema `limites` donne accès aux données géographiques réglementaires du 
  - la répartition géographique des services territoriaux
  - ....
 
+
+[toc]
+
+
 ## Tables remarquables
-_Les tableaux suivants décrivent les principales tables du schéma, et certaines de leur variables._
+_Les tableaux suivants décrivent les principales tables du schéma, et certaines de leur variables. Sauf précision, il s'agit de tables._
+
+### limites.area
+
+Table de référence des objets géographiques remarquables du PNM (zones réglementaires, communes, ...)
+
+- id: clé primaire
+- id_type: type d'objet (voir la table area_type)
+- name: nom de l'objet
+- description
+- geom: géométrie(multipolygon) de l'objet
+
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| id      | (PK) int       |   na |
+| id_type   | int        | numéro de correspondance avec la table _area.type_     |
+| name   | string        | nom de l'objet     | <!-- remplacer "name" par "nom" -->
+| description   | string        |      |
+| geom   | geometry (multipolygon)        | |
+
+
+Permet de traiter de façon uniforme les objets géographiques remarquables de types différents (par exemple le calcul de l'intersection de ces objets avec les mailles 1km)
+
+
+### limites.area_type
+
+Table de correspondance pour les objets géographiques remarquables.
+
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| id      | (PK) int       |   na |
+| type   | int        | numéro d'identifiant de type d'objet géographique - fait la correspondance avec id_type de _limites.area_     |
+| description      | string       |    |
+
+### limites.communes
+Contient 28 entités.
+
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| id      | (PK) int       |   na |
+| nom   | string        | nom de la commune  |
+| code_insee      | int       | |
+| canton/depart/ arrondisst/region     | str       |  nom de l'entité géographique  |
+| popul | int       | population au dernier recensement <!-- lequel? --> |
+| addhesion      | string       | deux valeurs: "oui", "non", concernant l'adhésion à la charte du PNM   |
+
+
+### limites.grid (Vue)
+<!-- est-ce que cette grille couvre l'ensemble  -->
+Vue de synthèse, par maille 1km, donnant pour chaque maille de limites.maille1k la surface appartenant à chaque zone, et le nom de la vallée principale.
+
+
+### grid1k_area
+
+_Ne contient que les polygones qui sont dans le parc_
+Intersections des mailles 1000 et des polygones remarquables du PNM (table _area_),
+c'est-à-dire qu'il contient des mailles fragmentées selon les zones qui les recouvrent.
+
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| id_grid      | (PK) int       |   na |
+|id_area	| (PK) int| na|
+| surface   | string        | nom de la commune  |
+| geom      | geometry       | |
+
 
 ### limites.limites
 Contient 6 entités: coeur, aire d'adhésion.....
@@ -21,17 +89,7 @@ Contient 6 entités: coeur, aire d'adhésion.....
 
 <!-- pas clair ce que la colonne "layer" veut dire -->
 
-### limites.communes
-Contient 28 entités 
 
-| Nom de la colonne      | Type | Description     |
-| :---        |    :----:   |          :---: |
-| id      | (PK) int       |   na |
-| nom   | string        | nom de la commune  |
-| code_insee      | int       | |
-| canton/depart/ arrondisst/region     | str       |  nom de l'entité géographique  |
-| popul | int       | population au dernier recensement <!-- lequel? --> |
-| addhesion      | string       | deux valeurs: "oui", "non", concernant l'adhésion à la charte du PNM   |
 
 ### limites.maille1k
 Maillage de 1km de côté pavage normalisé (EPSG:2154) <!-- les autres couches ne sont pas dans la même projection? -->
@@ -41,11 +99,11 @@ Maillage de 1km de côté pavage normalisé (EPSG:2154) <!-- les autres couches 
 | id      | (PK) int       |   na |
 | id_sig   | string        |      |
 | code_10km   | string        | numéro identifiant la maille dans un carré de 10 km <!-- ? -->      |
-| aire_*   | boolean        | indication (True/False) si la maille est dnas une zone d'intérêt     |
+| aire_*   | boolean        | indication (True/False) si la maille est dans une zone d'intérêt     |
 
 
 ### limites.maille500m
-Maillage de 500 de côté
+Maillage de 500m de côté
 
 
 | Nom de la colonne      | Type | Description     |
@@ -55,29 +113,16 @@ Maillage de 500 de côté
 | id_parent | int| id de la maille 1km parente |
 
 
-### limites.grid
-<!-- est-ce que cette grille couvre l'ensemble  -->
-
-Vue de synthèse, par maille 1km, donnant :
-
-- cd_sig
-- geom
-- surface_coeur
-- surface_aire_adhesion
-- surface_aoa
-- surface_vallee: plus grande surface d'intersection avec une vallée (vallée principale)
-- nom_vallee: nom de la vallée principale pour la maille
-
-| Nom de la colonne      | Type | Description     |
-| :---        |    :----:   |          :---: |
-| id      | (PK) int       |   na |
-| position   | string        |   position de la maille 500m dans la maille 1km qui la contient (NE, NO, SE, SW)  |
-| id_parent | int| id de la maille 1km parente |
 
 
 
 
 
+
+
+
+
+______
 
 limites.grid
 L'ensemble des mailles de l'aire totale du PNM peut par exemple être calculé ainsi:
@@ -106,25 +151,7 @@ Les traitements géométriques (intersections, inclusions) sont plus rapides lor
 - l'identification immédiate des mailles 1km liées à chaque géométrie remarquable
 - l'accélération des calculs de surface commune entre un objet géographique remarquable et une géométrie arbitraire.
 
-### limites.area
 
-Table de référence des objets géographiques remarquables du PNM (zones réglementaires, communes, ...)
-
-- id: clé primaire
-- id_type: type d'objet (voir la table area_type)
-- name: nom de l'objet
-- description
-- geom: géométrie(multipolygon) de l'objet
-
-Permet de traiter de façon uniforme les objets géographiques remarquables de types différents (par exemple le calcul de l'intersection de ces objets avec les mailles 1km)
-
-### limites.area_type
-
-Table de classification des objets géographiques remarquables.
-
-- id: clé primaire
-- type: identifiant de type d'objet géographique
-- description: description du type d'objet géographique
 
 ### fonction limites.get_id_type
 
@@ -146,19 +173,13 @@ select limites.get_id_area('limites', 'coeur');
 
 retourne l'identifiant de l'objet `coeur` de type `limites`.
 
-### grid1k_area
 
-Intersections des mailles 1000 et des polygones remarquables du PNM (les multipolygones de la table area)
 
-- id_grid, id_area
-- surface: surface de l'intersection
-- geom: géométrie de l'intersection
 
-### Utilisation de la table grid1k_area
+### Exemples d'utilisation de la table grid1k_area
 
 La table peut être utilisée directement ou en conjonction avec les mailles 1000 pour déterminer les relations géométriques entre une géométrie arbitraire et l'un des multipolygones.
 
-### Exemples d'utilisation
 
 Surface coeur de chaque commune
 
