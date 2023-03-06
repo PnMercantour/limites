@@ -1,16 +1,16 @@
 # Limites
 
 Le schema `limites` donne accès aux données géographiques réglementaires du Parc national du Mercantour:
- - les limites réglementaires du PNM,
+ - les limites des différentes zones du PNM,
  - la liste des communes de l'aire optimale d'adhésion, 
  - la répartition géographique des services territoriaux
  - ....
 
 ## Tables remarquables
+_Les tableaux suivants décrivent les principales tables du schéma, et certaines de leur variables._
 
-
-#### limites.limites
-Ne continent que 6 entités: coeur, aire d'adhésion.....
+### limites.limites
+Contient 6 entités: coeur, aire d'adhésion.....
 | Nom de la colonne      | Type | Description     |
 | :---        |    :----:   |          :---: |
 | id      | (PK) int       |   na |
@@ -21,47 +21,42 @@ Ne continent que 6 entités: coeur, aire d'adhésion.....
 
 <!-- pas clair ce que la colonne "layer" veut dire -->
 
-limites.communes
-
-| Nom de la colonne      | Type | Description     |
-| :---        |    :----:   |          :---: |
-| nom   | string        | nom de la zone (coeur, aire d'adhésion...)     |
-
-| code_insee      | int       | c'est le numéro du machin   |
-
-| code_insee      | int       | c'est le numéro du machin   |
-| n_truc   | string        | c'est le numéro du truc      |
-
-#### table_3
-| Nom de la colonne      | Type | Description     |
-| :---        |    :----:   |          :---: |
-|...      |...       |...   |
-
 ### limites.communes
+Contient 28 entités 
 
-- nom,
-- code_insee,
-- canton,
-- depart: le département,
-- popul: la population de la commune au dernier recensement,
-- adhesion: le statut (oui, non) d'adhésion de la commune à la charte du PNM.
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| id      | (PK) int       |   na |
+| nom   | string        | nom de la commune  |
+| code_insee      | int       | |
+| canton/depart/ arrondisst/region     | str       |  nom de l'entité géographique  |
+| popul | int       | population au dernier recensement <!-- lequel? --> |
+| addhesion      | string       | deux valeurs: "oui", "non", concernant l'adhésion à la charte du PNM   |
 
 ### limites.maille1k
+Maillage de 1km de côté pavage normalisé (EPSG:2154) <!-- les autres couches ne sont pas dans la même projection? -->
 
-Mailles 1km suivant la projection légale (2154), pavage normalisé.
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| id      | (PK) int       |   na |
+| id_sig   | string        |      |
+| code_10km   | string        | numéro identifiant la maille dans un carré de 10 km <!-- ? -->      |
+| aire_*   | boolean        | indication (True/False) si la maille est dnas une zone d'intérêt     |
 
-### limites.maille10k
-
-Mailles 10km
 
 ### limites.maille500m
+Maillage de 500 de côté
 
-Mailles de 500m de côté:
 
-- position: la position de la maille 500m dans la maille 1km qui la contient (NE, NO, SE, SW)
-- id_parent: la maille 1km parente
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| id      | (PK) int       |   na |
+| position   | string        |   position de la maille 500m dans la maille 1km qui la contient (NE, NO, SE, SW)  |
+| id_parent | int| id de la maille 1km parente |
+
 
 ### limites.grid
+<!-- est-ce que cette grille couvre l'ensemble  -->
 
 Vue de synthèse, par maille 1km, donnant :
 
@@ -73,6 +68,18 @@ Vue de synthèse, par maille 1km, donnant :
 - surface_vallee: plus grande surface d'intersection avec une vallée (vallée principale)
 - nom_vallee: nom de la vallée principale pour la maille
 
+| Nom de la colonne      | Type | Description     |
+| :---        |    :----:   |          :---: |
+| id      | (PK) int       |   na |
+| position   | string        |   position de la maille 500m dans la maille 1km qui la contient (NE, NO, SE, SW)  |
+| id_parent | int| id de la maille 1km parente |
+
+
+
+
+
+
+limites.grid
 L'ensemble des mailles de l'aire totale du PNM peut par exemple être calculé ainsi:
 
 ```sql
@@ -89,7 +96,8 @@ select * from limites.grid where surface_coeur + surface_aire_adhesion > 0;
 Les tables suivantes peuvent être chargées directement dans QGIS, un style par défaut leur est (en principe) associé. Pour les traitements complexes, voir le paragraphe [utilisation avancée](#utilisation-avancée).
 
 
-## Utilisation avancée
+
+## Log Interne
 
 Les objets géographiques remarquables du PNM (limites du parc, limites des communes du parc, services territoriaux, mailles 1km du territoire, etc) sont souvent utilisées dans les projets SQL et QGIS, ce qui nécessite l'optimisation des opérations de calcul les plus fréquentes (intersection, ...) par leur mise en cache.
 
