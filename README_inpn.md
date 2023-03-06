@@ -1,3 +1,6 @@
+--> **EMPLACEMENT TEMPORAIRE**
+_ce readme et les sous dossiers inpn devraient être dans leur propre dépôt_
+
 # Espaces protégés
 
 Les données relatives aux espaces protégés de la région Sud PACA sont enregistrées dans la base de données. Ces données sont également accessibles via des flux WMS et WFS ou sur le géoportail.

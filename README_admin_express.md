@@ -1,3 +1,6 @@
+--> **EMPLACEMENT TEMPORAIRE**
+_ce readme et les sous dossiers admin_express devraient être dans leur propre dépôt_
+
 # Admin Express
 
 Les données administratives (département, communes, EPCI, ...) proviennent du service admin express COG produit conjointement par l'INSEE et l'IGN.  
